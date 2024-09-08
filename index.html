@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visioneer - Coming Soon</title>
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #001f2e 0%, #001e1d 100%);
+      font-family: 'Arial', sans-serif;
+      color: #f1f1f1;
+      text-align: center;
+      padding: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      width: 350px;
+      height: auto;
+      margin-bottom: 30px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 3rem;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #f1f1f1;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      animation: slideIn 1.5s ease;
+    }
+
+    .underline {
+      text-decoration: underline;
+      color: #f9d423;
+    }
+
+    .social-icons {
+      margin-top: 30px;
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .social-icons a {
+      color: #f1f1f1;
+      font-size: 2.5rem;
+      text-decoration: none;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.1);
+      color: #f9d423;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      img {
+        width: 280px;
+      }
+
+      .social-icons a {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      img {
+        width: 220px;
+      }
+
+      .social-icons a {
+        font-size: 1.8rem;
+      }
+    }
+
+    /* Keyframe Animations */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <img src="./assets/images/Transparent Full.png" alt="Visioneer Logo">
+  <h1>Visioneer <span class="underline">Coming Soon</span></h1>
+
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/company/104949748" target="_blank" aria-label="LinkedIn"><i
+        class="fab fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61565788913305" target="_blank" aria-label="Facebook"><i
+        class="fab fa-facebook"></i></a>
+  </div>
+
+</body>
+
+</html>
